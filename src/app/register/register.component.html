@@ -1,0 +1,57 @@
+<div class="signup">Inscription</div>
+
+<form (ngSubmit)="submit()" [formGroup]="form">
+  <div class="form-group">
+    <label for="name">Nom</label>
+    <input type="text" formControlName="name" name="name" class="form-control" placeholder="Entrer un nom" [ngClass]="{'is-invalid':
+          submitted && f.name.errors}">
+    <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
+
+      <div *ngIf="f.name.errors.required">
+        Nom requis
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" formControlName="email" name="email" class="form-control" placeholder="Entrer un email"
+      [ngClass]="{'is-invalid':submitted && f.email.errors}">
+
+    <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+      <div *ngIf="f.email.errors.required">
+        Email requis
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="password">Mot de passe</label>
+    <input type="password" formControlName="password" name="password" class="form-control"
+      placeholder="Entrer un mot de passe" [ngClass]="{'is-invalid':submitted && f.password.errors}">
+
+    <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+      <div *ngIf="f.password.errors.required">
+        Mot de passe requis
+
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="confirm_password">Confirmer le mot de passe</label>
+    <input type="confirm_password" formControlName=passwordConfirm name="confirm_password" class="form-control"
+      placeholder="Entrer à nouveau le mot de passe">
+  </div>
+
+
+  <div class="valider">
+    <b><button type="submit" [routerLink]="['/login']" class="btn btn-primary mt-4">Confirmer l'inscription</button></b>
+    <br>
+    <i><button type="submit" [routerLink]="['/login']" class="btn btn-primary mt-4">Vous avez déjà un compte ?
+      Connectez-vous</button> </i>
+
+  </div>
+
+</form>
+
+<router-outlet></router-outlet>

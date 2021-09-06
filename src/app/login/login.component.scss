@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
+
+button{
+  background-color: transparent;
+  border-width: 0;
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+button:hover{
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+input{
+  color: black;
+}
+
+.login{
+  display: block;
+  position: relative;
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Rubik';
+  padding-top: 30px;
+}
+
+form{
+  position: relative;
+  font-family: 'Roboto';
+  font-size: 25px;
+  margin: 10%;
+  padding: 5%;
+  background-color: rgba(255, 255, 255, 0.205);
+  border-radius: 2%;
+}
+
+input{
+  height: 50px;
+  width: 350px;
+  border-radius: 15px;
+  margin-left: 20px;
+  padding: 2%;
+  font-size: 20px;;
+}
+
+.valider{
+  text-align: center;
+}

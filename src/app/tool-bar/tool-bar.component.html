@@ -1,0 +1,15 @@
+<div class='file'>
+  <div class="texte">
+    <form>
+      <label>
+        <h4>Nom de fichier</h4>
+      </label> <input type="text" name="name" id="nom" required>
+      <button type="button" id="Save" (click)=" save()">Sauvegarder</button>
+      <br><label>
+        <h4>Charger un fichier</h4>
+      </label><input type="file" class="Charger" id="myFile" (change)="change()">
+      <button (click)="openRequestedPopup()">Ouvrir une nouvelle fenêtre</button>
+
+    </form>
+  </div>
+</div>

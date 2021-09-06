@@ -1,0 +1,22 @@
+<div class="page">
+  <br><br><br>
+  <div class="info">
+    <img src="../../assets/profile.png">
+    <h3>Mes informations :</h3>
+    <p class="nom">Nom : {{this.nom}}</p>
+    
+    <p>Email : {{this.mail}}</p>
+  </div>
+
+  <div class="fichiers">
+    <h3>Mes fichiers:</h3>
+    <button (click)="toggleFiles()">{{showFiles ? "Cacher mes fichiers" : "Montrer mes fichiers"}}</button>
+    <div *ngIf="showFiles">
+      <ul>
+        <li *ngFor="let file of files">
+          {{file}}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

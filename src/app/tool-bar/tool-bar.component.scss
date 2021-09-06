@@ -1,0 +1,44 @@
+.file{
+  position: relative;
+  background-color: rgb(39, 39, 39);
+  width: 100%;
+  left: 0;
+  height: 220px;
+  padding: 2%;
+}
+
+.file input{
+  color: black;
+
+}
+
+button{
+  background-color: transparent;
+  border-width: 0;
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 100%;
+}
+
+button:hover{
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+input{
+  color: black;
+  height: 50px;
+  width: 50%;
+  border-radius: 15px;
+  margin-left: 20px;
+  padding: 2%;
+  font-size: 20px;
+}
+
+.Charger{
+  font-size: 100%;
+}
+
+.texte{
+  display: inline-block;
+  width: 100%;
+}

@@ -1,0 +1,25 @@
+<br><br><br>
+<table>
+  <tr>
+    <td class="sidebar">
+      <app-side-bar (selectItem)="swithToProject($event)"></app-side-bar>
+    </td>
+    <td class="partiedroite">
+      <div class="repertory" id="explorer">
+        <app-repertory></app-repertory>
+      </div>
+      <div class="grille" id="grille">
+          <app-tool-bar></app-tool-bar>
+      </div>
+      <div id="editeur">
+        <br>
+        <span>Choix du langage : </span>
+        <select [ngModel]="langagechoisi" (ngModelChange)="onChangeLang($event)" name="mode">
+          <option [value]="i" *ngFor="let i of langages">{{i}}</option>
+        </select>
+        <br><br>
+        <ace-editor theme="monokai" mode={{langagechoisi}} [options]="options" #editor style=" min-height: 750px; width:100%;"></ace-editor>
+      </div>
+    </td>
+  </tr>
+</table>

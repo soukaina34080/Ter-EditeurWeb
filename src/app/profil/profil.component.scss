@@ -1,0 +1,47 @@
+.page{
+  padding-bottom: 50%;
+  position: relative;
+  display: block;
+}
+
+button{
+  background-color: transparent;
+  border-width: 0;
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 20px;
+  font-style: italic;
+}
+
+button:hover{
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+img{
+  position: relative;
+  display: block;
+  text-align: center;
+  border-radius: 50%;
+  width: 25%;
+  margin: 0 auto;
+}
+
+.info{
+  position: relative;
+  display: block;
+  font-family: 'Raleway';
+  font-size: 30px;
+  width: 50%;
+  margin: 0 auto;
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.063);
+  border-radius: 10%;
+  padding: 5%;
+  top: 50px;
+}
+
+.fichiers{
+  position: relative;
+  display: block;
+  margin-top: 100px;
+}

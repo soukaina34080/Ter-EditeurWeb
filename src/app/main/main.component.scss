@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.titre{
+ text-align: center;
+}
+
+.blabla{
+  font-family: 'Raleway';
+  text-align: center;
+  font-size: 30px;
+}
+
+.blablabla{
+  font-family: 'Raleway';
+  padding-top: 50px;
+  text-align: justify;
+  font-size: 20px;
+}
+
+img{
+  display: flex;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+  width: 100%;
+}
+
+.language{
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  margin: 5%;
+
+}
+
+.lang{
+  width: 100px;
+  filter: grayscale(100%);
+  margin-left: 5%;
+  margin-right: 5%;
+  position: relative;
+}
+
+
+#php:hover{
+  filter: invert(100%);
+}
+
+.lang:hover{
+ filter: grayscale(0%);
+}
+
+.coder{
+  position: relative;
+  text-align: center;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.third {
+  padding-left: 5%;
+  padding-right: 5%;
+  border-radius: 30px;
+  font-family: 'Raleway';
+  letter-spacing: 10px;
+  font-size: 30px;
+  height: 75px;
+  text-transform: uppercase;
+  border-color: #e74c3c;
+  color: #fff;
+  box-shadow: 0 0 40px 40px #e74c3c inset, 0 0 10px 02px hsla(0, 0%, 100%, 0.5);
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+.third:hover {
+  box-shadow: 0 0 10px 0 #e74c3c inset, 0 0 10px 4px #e74c3c;
+}

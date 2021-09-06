@@ -1,0 +1,27 @@
+<body>
+  <header><div class="barremenu" role="banner">
+    <img src="../assets/Edit.png">
+    <h1>EasyEditor</h1>
+    <!--<button type="button" class="bouton" (click)=view() >Voir</button>-->
+    <div class="menu">
+    <button type="button" class="bouton" routerLink="" >Accueil</button>
+    <button type="button" class="bouton" routerLink="profil" *ngIf="isAuth" (click)="goProfil()">Profil</button>
+    <button type="button" class="bouton" routerLink="login" *ngIf="!isAuth" (click)="login()">Connexion</button>
+    <button type="button" class="bouton" routerLink="register" *ngIf="!isAuth" (click)="signIn()">Inscription</button>
+    <button type="button" class="bouton" routerLink="" *ngIf="isAuth" (click)="signOut()">Déconnexion</button>
+    </div>
+  </div></header>
+
+  <div class="structure">
+    <router-outlet></router-outlet>
+
+    <footer class="foot">
+      © EasyEditor - Mai 2021 <br>
+      AINAS Nouria - ABRADI Chaima- CHASSAIN Julie - MAURIN Christina - MESSAOUDI Soukaina
+    </footer>
+  </div>
+
+
+
+</body>
+
